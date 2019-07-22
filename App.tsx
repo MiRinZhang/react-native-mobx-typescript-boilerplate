@@ -18,16 +18,16 @@ import RootStore from './src/models';
 const stores = new RootStore();
 
 const App = () => {
-	return (
-		<Fragment>
-			<StatusBar barStyle="dark-content" />
-			<SafeAreaView>
-				<Provider store={stores}>
-					<HomePage />
-				</Provider>
-			</SafeAreaView>
-		</Fragment>
-	);
+    return (
+        <Fragment>
+            <StatusBar barStyle="dark-content" />
+            <SafeAreaView>
+                <Provider store={stores}>
+                    <HomePage />
+                </Provider>
+            </SafeAreaView>
+        </Fragment>
+    );
 };
 
 export default App;
