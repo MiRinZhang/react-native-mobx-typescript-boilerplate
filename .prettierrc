@@ -6,7 +6,5 @@
   "singleQuote": true,
   "jsxBracketSameLine": true,
   "parser": "babylon",
-  "requirePragma": true,
-  "insertPragma": true,
   "proseWrap": "preserve"
 }
