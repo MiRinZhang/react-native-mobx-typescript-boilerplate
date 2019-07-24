@@ -3,7 +3,7 @@
  */
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
-import { inject, observer } from 'mobx-react/native';
+import { inject, observer } from 'mobx-react';
 import { navigation } from 'utils/uiDecorator';
 
 interface Props {
@@ -16,22 +16,21 @@ interface State {
 
 @inject('homeStore')
 @observer
-@navigation('首页')
+@navigation('啦啦啦')
 export default class HomePage extends Component<Props, State> {
     constructor(props: Props, state: State) {
         super(props, state);
     }
 
     render() {
-        const { data, setName } = this.props.store,
-            { name } = data;
+        const { message, updateMessage } = this.props.homeStore;
 
         return (
             <View>
                 <Text>HomePage</Text>
-                <Text>Name: {name}</Text>
+                <Text>Name: {message}</Text>
                 <TouchableOpacity
-                    onPress={() => setName('test name' + Date.now())}>
+                    onPress={() => updateMessage('test name' + Date.now())}>
                     <Text>click</Text>
                 </TouchableOpacity>
             </View>

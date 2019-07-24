@@ -12,5 +12,6 @@ export default class HomeModel {
     @action
     updateMessage(message: string): void {
         this.message = message;
+        console.log(this.message);
     }
 }

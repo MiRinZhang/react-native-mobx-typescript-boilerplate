@@ -9,7 +9,7 @@
  */
 
 import React from 'react';
-import { Provider } from 'mobx-react/native';
+import { Provider } from 'mobx-react';
 import App from './src';
 import { rootModel } from 'models';
 
