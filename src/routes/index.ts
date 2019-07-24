@@ -1,13 +1,19 @@
 import {
+    createAppContainer,
     createStackNavigator,
     createBottomTabNavigator,
 } from 'react-navigation';
+import Home from 'pages/home';
+import Detail from 'pages/detail';
 
-const HomeStack = createStackNavigator({});
+const HomeStack = createStackNavigator({
+    Home,
+    Detail,
+});
 
-export const Navigators = createBottomTabNavigator(
+const Navigators = createBottomTabNavigator(
     {
-        Home: {
+        Main: {
             screen: HomeStack,
             navigationOptions: {
                 title: '首页',
@@ -25,3 +31,5 @@ export const Navigators = createBottomTabNavigator(
         },
     }
 );
+
+export default createAppContainer(Navigators);
