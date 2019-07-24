@@ -1,16 +1,15 @@
 /**
  * @format
  */
-import { observable, action } from 'mobx';
+import HomeModel from 'models/home';
 
-export default class RootStore {
-    @observable
-    data = {
-        name: 'zhangyabing',
-    };
+class RootModel {
+    homeStore: object = {};
 
-    @action.bound
-    setName(name: string): void {
-        this.data.name = name;
+    constructor() {
+        this.homeStore = new HomeModel(this);
     }
 }
+
+export default RootModel;
+export const rootModel = new RootModel();

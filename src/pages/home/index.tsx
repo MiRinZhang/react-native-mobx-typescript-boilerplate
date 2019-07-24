@@ -4,6 +4,7 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { inject, observer } from 'mobx-react/native';
+import { navigation } from 'utils/uiDecorator';
 
 interface Props {
     [key: string]: any;
@@ -13,8 +14,9 @@ interface State {
     [key: string]: any;
 }
 
-@inject('store')
+@inject('homeStore')
 @observer
+@navigation('首页')
 export default class HomePage extends Component<Props, State> {
     constructor(props: Props, state: State) {
         super(props, state);

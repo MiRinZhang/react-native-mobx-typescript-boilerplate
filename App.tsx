@@ -8,26 +8,13 @@
  * @format
  */
 
-import React, { Fragment } from 'react';
-import { SafeAreaView, StatusBar } from 'react-native';
-// todo
+import React from 'react';
 import { Provider } from 'mobx-react/native';
-import HomePage from './src/pages/home';
-import RootStore from './src/models';
+import App from './src';
+import { rootModel } from 'models';
 
-const stores = new RootStore();
-
-const App = () => {
-    return (
-        <Fragment>
-            <StatusBar barStyle="dark-content" />
-            <SafeAreaView>
-                <Provider store={stores}>
-                    <HomePage />
-                </Provider>
-            </SafeAreaView>
-        </Fragment>
-    );
-};
-
-export default App;
+export default () => (
+    <Provider {...rootModel}>
+        <App />
+    </Provider>
+);
