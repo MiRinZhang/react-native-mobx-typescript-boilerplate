@@ -21,7 +21,7 @@ const Navigators = createBottomTabNavigator(
         },
     },
     {
-        initialRouteName: 'Home',
+        initialRouteName: 'Main',
         tabBarOptions: {
             tabStyle: {
                 padding: 0,
