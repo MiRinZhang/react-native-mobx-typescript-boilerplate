@@ -5,8 +5,10 @@ import React, { Component } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { inject, observer } from 'mobx-react';
 import { navigation } from 'utils/uiDecorator';
+import { IHomeStore } from 'models/home';
 
 interface Props {
+    homeStore: IHomeStore;
     [key: string]: any;
 }
 
