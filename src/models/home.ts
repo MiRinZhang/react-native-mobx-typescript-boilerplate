@@ -14,7 +14,7 @@ export default class HomeModel implements IHomeStore {
 
     @observable message: string = '';
 
-    @action
+    @action.bound
     updateMessage(message: string): void {
         this.message = message;
     }
