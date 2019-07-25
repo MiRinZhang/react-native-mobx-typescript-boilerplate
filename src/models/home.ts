@@ -2,6 +2,7 @@ import { observable, action } from 'mobx';
 
 export interface IHomeStore {
     message: string;
+    updateMessage(message: string): void;
 }
 
 export default class HomeModel implements IHomeStore {
