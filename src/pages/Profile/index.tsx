@@ -6,12 +6,12 @@ interface Props {
     [key: string]: any;
 }
 
-@navigation('详情')
-export default class Detail extends Component<Props, {}> {
+@navigation('我的')
+export default class Profile extends Component<Props, {}> {
     render() {
         return (
             <View>
-                <Text>Detail</Text>
+                <Text>Profile</Text>
             </View>
         );
     }

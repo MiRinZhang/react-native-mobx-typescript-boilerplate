@@ -12,7 +12,7 @@ export default class HomeModel implements IHomeStore {
         this.rootStore = rootStore;
     }
 
-    @observable message: string = '';
+    @observable message: string = 'default message';
 
     @action.bound
     updateMessage(message: string): void {

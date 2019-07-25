@@ -3,13 +3,21 @@ import {
     createStackNavigator,
     createBottomTabNavigator,
 } from 'react-navigation';
+import { hideTabBar } from './utils';
 import Home from 'pages/home';
 import Detail from 'pages/detail';
+import Profile from 'pages/Profile';
 
 const HomeStack = createStackNavigator({
     Home,
     Detail,
 });
+HomeStack.navigationOptions = hideTabBar;
+
+const ProfileStack = createStackNavigator({
+    Profile,
+});
+ProfileStack.navigationOptions = hideTabBar;
 
 const Navigators = createBottomTabNavigator(
     {
@@ -17,6 +25,12 @@ const Navigators = createBottomTabNavigator(
             screen: HomeStack,
             navigationOptions: {
                 title: '首页',
+            },
+        },
+        My: {
+            screen: ProfileStack,
+            navigationOptions: {
+                title: '我的',
             },
         },
     },

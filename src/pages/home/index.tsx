@@ -2,25 +2,25 @@
  * @format
  */
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View } from 'react-native';
+import { Button, Text } from 'native-base';
+import { NavigationScreenProp } from 'react-navigation';
 import { inject, observer } from 'mobx-react';
 import { navigation } from 'utils/uiDecorator';
 import { IHomeStore } from 'models/home';
+import { styles } from './style';
 
 interface Props {
     homeStore: IHomeStore;
-    [key: string]: any;
-}
-
-interface State {
-    [key: string]: any;
+    // @ts-ignore
+    navigation: NavigationScreenProp;
 }
 
 @inject('homeStore')
 @observer
-@navigation('啦啦啦')
-export default class HomePage extends Component<Props, State> {
-    constructor(props: Props, state: State) {
+@navigation('首页')
+export default class HomePage extends Component<Props, {}> {
+    constructor(props: Props, state: {}) {
         super(props, state);
     }
 
@@ -28,13 +28,23 @@ export default class HomePage extends Component<Props, State> {
         const { message, updateMessage } = this.props.homeStore;
 
         return (
-            <View>
-                <Text>HomePage</Text>
-                <Text>Name: {message}</Text>
-                <TouchableOpacity
-                    onPress={() => updateMessage('test name' + Date.now())}>
-                    <Text>click</Text>
-                </TouchableOpacity>
+            <View style={styles.wrapper}>
+                <Text>Message: {message}</Text>
+                <Button
+                    success
+                    style={styles.button}
+                    onPress={() =>
+                        updateMessage('test message: ' + Date.now())
+                    }>
+                    <Text>change message</Text>
+                </Button>
+
+                <Button
+                    info
+                    style={styles.button}
+                    onPress={() => this.props.navigation.navigate('Detail')}>
+                    <Text>go detail</Text>
+                </Button>
             </View>
         );
     }
