@@ -4,38 +4,38 @@ import {
     createBottomTabNavigator,
 } from 'react-navigation';
 import { hideTabBar } from './utils';
-import Home from 'pages/home';
+import Welcome from 'pages/welcome';
 import Detail from 'pages/detail';
-import Profile from 'pages/Profile';
+import Profile from 'pages/profile';
 
 const HomeStack = createStackNavigator({
-    Home,
+    Welcome,
     Detail,
 });
 HomeStack.navigationOptions = hideTabBar;
 
-const ProfileStack = createStackNavigator({
+const SettingStack = createStackNavigator({
     Profile,
 });
-ProfileStack.navigationOptions = hideTabBar;
+SettingStack.navigationOptions = hideTabBar;
 
 const Navigators = createBottomTabNavigator(
     {
-        Main: {
+        Home: {
             screen: HomeStack,
             navigationOptions: {
-                title: '首页',
+                title: 'News',
             },
         },
-        My: {
-            screen: ProfileStack,
+        Setting: {
+            screen: SettingStack,
             navigationOptions: {
-                title: '我的',
+                title: 'My',
             },
         },
     },
     {
-        initialRouteName: 'Main',
+        initialRouteName: 'Home',
         tabBarOptions: {
             tabStyle: {
                 padding: 0,
