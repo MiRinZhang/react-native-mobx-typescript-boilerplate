@@ -6,8 +6,8 @@ import { navigation } from 'utils/uiDecorator';
 export default class Detail extends Component<{}, {}> {
     render() {
         return (
-            <View>
-                <Text>Detail</Text>
+            <View style={{ margin: 10, alignItems: 'center' }}>
+                <Text>Detail content</Text>
             </View>
         );
     }

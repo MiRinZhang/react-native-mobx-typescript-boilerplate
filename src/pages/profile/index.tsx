@@ -6,8 +6,8 @@ import { navigation } from 'utils/uiDecorator';
 export default class Profile extends Component<{}, {}> {
     render() {
         return (
-            <View>
-                <Text>Profile</Text>
+            <View style={{ margin: 10, alignItems: 'center' }}>
+                <Text>Profile content</Text>
             </View>
         );
     }
