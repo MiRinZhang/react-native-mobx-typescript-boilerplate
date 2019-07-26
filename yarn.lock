@@ -4649,11 +4649,6 @@ mobx-react@^5.4.4:
     hoist-non-react-statics "^3.0.0"
     react-lifecycles-compat "^3.0.2"
 
-mobx-state-tree@^3.14.1:
-  version "3.14.1"
-  resolved "https://registry.yarnpkg.com/mobx-state-tree/-/mobx-state-tree-3.14.1.tgz#0a523876b87817f5c8553a162e71b38044f0c9da"
-  integrity sha512-cmwO1jvYPgaJTGJtqId0Qod4cDqcJEWWCwSu/Uns7jFT+kWKzLFhzb9jxPub8YM3HSXg7HPGpKiLe970he9FOw==
-
 mobx@^5.13.0:
   version "5.13.0"
   resolved "https://registry.yarnpkg.com/mobx/-/mobx-5.13.0.tgz#0fd68f10aa5ff2d146a4ed9e145b53337cfbca59"
@@ -4712,18 +4707,19 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-native-base-shoutem-theme@GeekyAnts/theme#master:
-  version "0.2.3"
-  resolved "https://codeload.github.com/GeekyAnts/theme/tar.gz/51fcc2334ca225bdcc7a4cb2efcacc7bcbf3e2ef"
+native-base-shoutem-theme@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/native-base-shoutem-theme/-/native-base-shoutem-theme-0.3.0.tgz#9431b52cca7af9db2e2d0f5a864acb48d48dc4de"
+  integrity sha512-guf5IKeMaQERJlD/QYlgxnsrxCeKNqC4vGwFyA8OetanxGt+oNxR5SQhLxM28CIS1D4OCqVl+u8znBdlqsIkZQ==
   dependencies:
     hoist-non-react-statics "^1.0.5"
     lodash "4.17.11"
     prop-types "^15.5.10"
 
 native-base@^2.13.0:
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/native-base/-/native-base-2.13.0.tgz#b2b3e7355e4787c77383c91dae90e9506b6194f9"
-  integrity sha512-hbRG6faxdVVA536Doi21M+CEPoWFDKaKucjA2Q42qG16vysQ0Bnn6ThJAl9+/RDuMbiWqiLSieaqPzKJ4WnHew==
+  version "2.13.4"
+  resolved "https://registry.yarnpkg.com/native-base/-/native-base-2.13.4.tgz#c1752d0bb016355b088adc5d6790b1dd678864ac"
+  integrity sha512-qgGW8qWFGVRnfPUgEgN/RC+8uM417H2rH+S9V8+Gg/3ef8RYcSc9wrrX2f+OauSvgfvnWwrPeFPzkBNp7iu3PQ==
   dependencies:
     blueimp-md5 "^2.5.0"
     clamp "^1.0.1"
@@ -4733,7 +4729,7 @@ native-base@^2.13.0:
     fs-extra "^2.0.0"
     jest-react-native "^18.0.0"
     lodash "^4.17.14"
-    native-base-shoutem-theme GeekyAnts/theme#master
+    native-base-shoutem-theme "0.3.0"
     opencollective-postinstall "^2.0.2"
     print-message "^2.1.0"
     prop-types "^15.5.10"
@@ -5448,9 +5444,9 @@ react-deep-force-update@^1.0.0:
   integrity sha512-WUSQJ4P/wWcusaH+zZmbECOk7H5N2pOIl0vzheeornkIMhu+qrNdGFm0bDZLCb0hSF0jf/kH1SgkNGfBdTc4wA==
 
 react-devtools-core@^3.6.1:
-  version "3.6.2"
-  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-3.6.2.tgz#7d425f160c5928129fa9acdbdd9e80a334e09c8d"
-  integrity sha512-a5r2Er0PajtlvKYBUKzB3vW5qek8TbgQWwRruDEwTm3VnqVffHmnvApRil/lfkAa8ghXcESNizrtKu/18oG55Q==
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-3.6.3.tgz#977d95b684c6ad28205f0c62e1e12c5f16675814"
+  integrity sha512-+P+eFy/yo8Z/UH9J0DqHZuUM5+RI2wl249TNvMx3J2jpUomLQa4Zxl56GEotGfw3PIP1eI+hVf1s53FlUONStQ==
   dependencies:
     shell-quote "^1.6.1"
     ws "^3.3.1"
@@ -6577,9 +6573,9 @@ tslib@^1.8.1, tslib@^1.9.0:
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
 
 tsutils@^3.7.0:
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.14.0.tgz#bf8d5a7bae5369331fa0f2b0a5a10bd7f7396c77"
-  integrity sha512-SmzGbB0l+8I0QwsPgjooFRaRvHLBLNYM8SeQ0k6rtNDru5sCGeLJcZdwilNndN+GysuFjF5EIYgN8GfFG6UeUw==
+  version "3.14.1"
+  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.14.1.tgz#f1d2b93d2a0876481f2f1f98c25ba42bbd7ee860"
+  integrity sha512-kiuZzD1uUA5DxGj/uxbde+ymp6VVdAxdzOIlAFbYKrPyla8/uiJ9JLBm1QsPhOm4Muj0/+cWEDP99yoCUcSl6Q==
   dependencies:
     tslib "^1.8.1"
 

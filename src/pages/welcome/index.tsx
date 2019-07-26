@@ -18,7 +18,7 @@ interface Props {
 
 @inject('homeStore')
 @observer
-@navigation('首页')
+@navigation('Welcome')
 export default class HomePage extends Component<Props, {}> {
     constructor(props: Props, state: {}) {
         super(props, state);
