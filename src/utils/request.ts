@@ -7,7 +7,7 @@ const instance = axios.create({
     baseURL: 'http://localhost:3001',
     timeout: 30000,
     headers: {
-        'X-Custom-Header': 'M-NOTE',
+        'X-Custom-Header': 'test-info',
     },
 });
 
@@ -18,7 +18,7 @@ const instance = axios.create({
  */
 const testSuccess = (response: AxiosResponse) => {
     const { data, status } = response,
-        { code = -1 } = data || {};
+        { code = 0 } = data || {};
 
     return status === 200 && code === 0;
 };
